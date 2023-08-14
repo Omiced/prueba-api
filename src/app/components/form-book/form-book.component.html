@@ -1,4 +1,9 @@
-<form action="" class="form-book">
+<form
+  action=""
+  class="form-book"
+  [formGroup]="registerForm"
+  (ngSubmit)="onSubmit()"
+>
   <fieldset class="form-group">
     <legend>Add Book</legend>
     <label for="authors">Authors</label>
@@ -7,6 +12,7 @@
       name="authors"
       id="authors"
       placeholder="Edgar Allan Poe"
+      formControlName="authors"
     />
     <label for="title">Title</label>
     <input
@@ -14,13 +20,36 @@
       name="title"
       id="title"
       placeholder="The tale-tell heart"
+      formControlName="title"
     />
     <label for="authors">Pages</label>
-    <input type="number" name="pages" id="pages" placeholder="0" />
+    <input
+      type="number"
+      name="pages"
+      id="pages"
+      placeholder="0"
+      formControlName="pages"
+    />
     <label for="reference">Text Reference</label>
-    <input type="text" name="reference" id="reference" placeholder="No idea" />
+    <input
+      type="text"
+      name="reference"
+      id="reference"
+      placeholder="No idea"
+      formControlName="textReference"
+    />
     <label for="username">Username</label>
-    <input type="text" name="username" id="username" placeholder="pedrito" />
-    <button>Add</button>
+    <input
+      type="text"
+      name="username"
+      id="username"
+      placeholder="pedrito"
+      formControlName="username"
+    />
+    <button>Add Reference</button>
+    <span class="error" *ngIf="isInvalid"
+      >Please fill in all the information in the form.</span
+    >
+    <span class="success" *ngIf="isValid">Successfully created reference.</span>
   </fieldset>
 </form>

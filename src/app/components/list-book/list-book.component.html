@@ -1,1 +1,26 @@
-<div class=""></div>
+<h2>References</h2>
+<ul class="container">
+  <li *ngFor="let reference of references">
+    <article class="card">
+      <h3 class="card-title">{{ reference.title | titlecase }}</h3>
+      <div class="text-container">
+        <p class="card-text">
+          <span class="bold">Authors:</span> {{ reference.authors }}
+        </p>
+        <p class="card-text">
+          <span class="bold">Reference:</span> {{ reference.textReference }}
+        </p>
+        <p class="card-text">
+          <span class="bold">Pages:</span> {{ reference.pages }}
+        </p>
+      </div>
+      <div class="text-container"></div>
+      <div class="text-container">
+        <p class="card-text">
+          <span class="bold">Add by:</span> {{ reference.username }}
+        </p>
+        <p class="card-text">{{ reference.date | date }}</p>
+      </div>
+    </article>
+  </li>
+</ul>

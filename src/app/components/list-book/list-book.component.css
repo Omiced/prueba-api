@@ -1,5 +1,48 @@
-div{
-  border: blue 2px solid;
-  width: 100%;
-  aspect-ratio: 1;
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 10px;
+  justify-content: space-between;
+  margin: 0;
+  padding-right: 30px;
+}
+
+
+.card{
+  border: 2px solid coral;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.card-title{
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+}
+
+.text-container{
+  display: grid;
+  grid-auto-flow:column;
+  margin: 0;
+  gap: 5px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card-text{
+  font-size: 12px;
+}
+
+
+.bold{
+  font-weight: 700;
+}
+
+h2{
+  text-align: center;
 }

@@ -1,0 +1,6 @@
+{
+  "/reference/create": {
+    "target": "http://localhost:300",
+    "secure": false
+  }
+}

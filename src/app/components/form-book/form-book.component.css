@@ -36,3 +36,33 @@ button{
   font-size: 1.125rem;
   background-color: coral;
 }
+
+button:active{
+  background-color: white;
+  color: coral;
+  border: 2px solid coral;
+  transform: scale(1.05);
+}
+
+button:hover{
+  background-color: white;
+  color: coral;
+  border: 2px solid coral;
+
+}
+
+span{
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+}
+.error{
+  background-color: #ffdfd4;
+}
+
+.success{
+  background-color: #dbeddc;
+}
