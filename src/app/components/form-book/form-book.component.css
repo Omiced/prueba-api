@@ -1,0 +1,38 @@
+.form-book{
+  font-family: 'Roboto', sans-serif;
+}
+
+.form-group{
+  display: grid;
+  row-gap: 5px;
+}
+
+fieldset{
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  border-color: coral;
+}
+
+legend{
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+input{
+  border: 2px solid coral;
+  border-radius: 5px;
+  padding: 12px;
+}
+
+label{
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+button{
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.125rem;
+  background-color: coral;
+}
