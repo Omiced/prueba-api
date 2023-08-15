@@ -1,27 +1,36 @@
-# ApiTest
+# Prueba Becario 2
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+Para esta prueba se pide consumir una API de prueba que realiza una conexion a una Base de datos local y permite crear y obtener datos, en este caso referencias.
+La api fue proporcionada por los entrevistadores.
 
-## Development server
+## Proyecto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Para ver el proyecto en local, hace falta la api proporcionada, clonar este repo, ya con las dos cosas.
 
-## Code scaffolding
+1. Iniciar el servidor de mysql.
+2. Inicial la api con un `npm test`
+3. Iniciar el proyecto con `ng serve -o` o `npm start`.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Agregar referencias
 
-## Build
+Para agregar datos a la base, cree un formulario, donde se piden titulo, autor , número de páginas, referencia y username.
+Una vez rellenados todos los campos de manera correcta al oprimir el boton add. Estos datos se envian en el body de una petición POST.
+Si la referencia fue agregada con éxito se muestra un mensaje en pantalla.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Imagen Agregar Referencia
 
-## Running unit tests
+![Formulario para agregar referencia](./src/assets/inicial.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Lista de referencias
 
-## Running end-to-end tests
+Ya que se agrego una o varias referencias del lado derecho se mostraran unas cards con la info de la referencia.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Imagen Cards Referencias.
 
-## Further help
+![cards](./src/assets/referencias_carga.png)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Al agregar nuevas referencias estas tambien se iran agregando al listado
+
+Imagen Nueva Referencia
+
+![referencia nueva](./src/assets/nueva%20referencia.png)
